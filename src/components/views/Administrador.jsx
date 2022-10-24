@@ -1,6 +1,6 @@
 import {Table } from "react-bootstrap";
 import {Link} from 'react-router-dom';
-import ItemReceta from "./Receta/ItemReceta";
+
 
 const Administrador = () => {
     return (
@@ -24,7 +24,6 @@ const Administrador = () => {
           </tr>
         </thead>
         <tbody>
-            <ItemReceta></ItemReceta>
         </tbody>
       </Table>
     </section>

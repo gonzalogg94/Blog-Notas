@@ -3,8 +3,8 @@ import Card from 'react-bootstrap/Card';
 
 const CardReceta = () => {
     return (
-        <Card className='mt-5'>
-      <Card.Img variant="top" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <Card className='mt-5 bg-black text-white'>
+      <Card.Img className='pt-3' variant="top" src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
       <Card.Body className='text-center'>
         <Card.Title>Titulo</Card.Title>
         <Card.Text>

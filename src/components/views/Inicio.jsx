@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container,Row } from 'react-bootstrap';
+import { Container,Row } from 'react-bootstrap';
 import CardReceta from './Receta/CardReceta';
 
 const Inicio = () => {

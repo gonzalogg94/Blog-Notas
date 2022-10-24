@@ -4,7 +4,7 @@ import CardReceta from './Receta/CardReceta';
 
 const Inicio = () => {
     return (
-       <Container className='mainSection pt-3'>
+       <Container className='mainSection py-4'>
         <h1 className='display-2 text-center text-white'>Lista De Recetas</h1>
         <hr className='text-white' />
         <Row xs={1} md={4} className="g-4">

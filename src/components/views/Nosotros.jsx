@@ -4,7 +4,7 @@ import gonzalo from "../img/gonzalo.png"
 
 const Nosotros = () => {
     return (
-        <Container className='mainSection'>
+        <Container className='mainSection pt-5'>
         <section className='text-center'>
             <img className='w-25' src={gonzalo} alt="avatar de gonzalo" />
             <p className='text-center text-white'>Hola, mi nombre es Gonzalo tengo 27 años, soy profesor de

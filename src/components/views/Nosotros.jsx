@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Col, Container, Row, Badge } from 'react-bootstrap';
 import gonzalo from "../img/gonzalo.png"
 
@@ -9,7 +9,7 @@ const Nosotros = () => {
         <section className='text-center pb-5'>
             <img className='w-25' src={gonzalo} alt="avatar de gonzalo" />
             <p className='text-center text-white'>Hola, mi nombre es Gonzalo Gallardo soy Full Stack Developer. Creo que la programación abre las puertas a un mundo donde el límite no son tus conocimientos técnicos sino tu creatividad, con la cual puedes crear lo que quieras. Te comparto a continuación mi Link de GitHub donde puedes ver el repositorio de muchos proyectos en los cuales he trabajado y estoy trabajando además de algunas skills con las que cuento.</p>
-            <a href="https://github.com/gonzalogg94">
+            <a href="https://github.com/gonzalogg94" target="_blank">
             <Badge bg="warning" text="dark" className='fs-4'>GitHub</Badge>
             </a>
             

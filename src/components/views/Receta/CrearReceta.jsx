@@ -26,8 +26,8 @@ const CrearReceta = () => {
           <Form.Label>Categoria*</Form.Label>
           <Form.Select>
             <option value="">Seleccione una opcion</option>
-            <option value="bebida caliente">Entradas</option>
-            <option value="bebida fria">Platos Principales</option>
+            <option value="comida caliente">Comida Caliente</option>
+            <option value="comida fria">Comida fria</option>
             <option value="dulce">Pastas</option>
             <option value="salado">Postres</option>
           </Form.Select>

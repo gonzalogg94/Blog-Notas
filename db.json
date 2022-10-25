@@ -1,0 +1,18 @@
+{
+  "recetas": [
+    {
+      "nombreReceta": "pollo",
+      "descripcion": "comida caliente que se realiza en la cocina",
+      "categoria": "comida fria",
+      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 1
+    },
+    {
+      "nombreReceta": "tarta",
+      "descripcion": "comida caliente que se realiza en la cocina",
+      "imagen": "https://images.pexels.com/photos/14040187/pexels-photo-14040187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "comida caliente",
+      "id": 2
+    }
+  ]
+}

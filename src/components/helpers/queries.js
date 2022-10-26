@@ -38,3 +38,16 @@ export const borrarRecetaAPI = async (id) => {
     console.log(error);
   }
 };
+
+export const obtenerRecetaAPI = async (id) => {
+  try {
+    const respuesta = await fetch(URL+"/"+id);
+    const recetaBuscada={
+      dato:await respuesta.json(),
+      status:respuesta.status
+    }
+    return recetaBuscada;
+  } catch (error) {
+    console.log(error);
+  }
+};

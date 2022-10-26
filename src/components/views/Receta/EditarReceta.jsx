@@ -1,13 +1,22 @@
 
+import { useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useParams } from "react-router-dom";
+import Swal from "sweetalert2";
+import { obtenerRecetaAPI } from "../../helpers/queries";
 
 
 const EditarReceta = () => {
+const {id} =useParams();
+
+
+  
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue
   } = useForm({
     defaultValues: {
       nombreReceta: "",
@@ -17,13 +26,27 @@ const EditarReceta = () => {
     },
   });
 
-  const onSubmit = (datos) => {
-    console.log(datos);
-    console.log("desde la funcion submit");
+  useEffect(()=>{
+    obtenerRecetaAPI(id).then((respuesta)=>{
+      if(respuesta.status===200){
+    setValue("nombreReceta",respuesta.dato.nombreReceta)
+    setValue("descripcion",respuesta.dato.descripcion)
+    setValue("imagen",respuesta.dato.imagen)
+    setValue("categoria",respuesta.dato.categoria)
+      }else{
+        Swal.fire("Ocurrio un error","Intente este paso en unos minutos","error")
+      }
+    console.log(respuesta)
+    })
+    },[])
+
+  const onSubmit = (receta) => {
+    console.log(receta);
+    
   };
   return (
     <section className="container mainSection">
-      <h1 className="display-4 mt-5 text-center text-white">Nueva Receta</h1>
+      <h1 className="display-4 mt-5 text-center text-white">Editar Receta</h1>
       <hr className="text-white" />
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formPrecio">

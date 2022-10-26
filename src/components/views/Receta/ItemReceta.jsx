@@ -46,7 +46,7 @@ const ItemReceta = ({ receta,setRecetas }) => {
       <td>{receta.imagen}</td>
       <td>{receta.categoria}</td>
       <td>
-        <Link className="btn btn-warning" to="/administrar/editar">
+        <Link className="btn btn-warning" to={`/administrar/editar/${receta.id}`}>
           Editar
         </Link>
         <Button variant="danger" onClick={borrarReceta}>

@@ -2,12 +2,6 @@
 
 *Proyecto desarrollado con React*
 
-## Acceso a la Demo del proyecto en el siguiente link 👀:
-
-
-web-clima-react.netlify.app(MODIFICAR)
-
-
 
 ## Librerías usadas 📁:
 

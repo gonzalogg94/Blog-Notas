@@ -20,6 +20,27 @@
       "categoria": "comida fria",
       "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "id": 3
+    },
+    {
+      "nombreReceta": "tarta de cebolla",
+      "descripcion": "tarta de cebolla casera",
+      "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
+      "categoria": "comida caliente",
+      "id": 4
+    },
+    {
+      "nombreReceta": "pizza",
+      "descripcion": "pizza casera a la piedra",
+      "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
+      "categoria": "comida caliente",
+      "id": 5
+    },
+    {
+      "nombreReceta": "empanadas",
+      "descripcion": "Producto tradicional argentino",
+      "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
+      "categoria": "comida caliente",
+      "id": 6
     }
   ]
 }

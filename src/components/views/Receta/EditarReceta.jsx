@@ -2,9 +2,9 @@
 import { useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { obtenerRecetaAPI } from "../../helpers/queries";
+import { editarRecetaAPI, obtenerRecetaAPI } from "../../helpers/queries";
 
 
 const EditarReceta = () => {
@@ -25,6 +25,7 @@ const {id} =useParams();
       categoria: "",
     },
   });
+  const navegacion=useNavigate();
 
   useEffect(()=>{
     obtenerRecetaAPI(id).then((respuesta)=>{
@@ -42,7 +43,15 @@ const {id} =useParams();
 
   const onSubmit = (receta) => {
     console.log(receta);
-    
+    editarRecetaAPI(id,receta).then((respuesta)=>{
+      if(respuesta.status===200){
+        Swal.fire("Receta actualizada","La receta fue actualizada correstamente","success")
+        navegacion("/administrador");
+      }else{
+        Swal.fire("Ocurrio un error","Intente este paso en unos minutos","error")
+      }
+    })
+
   };
   return (
     <section className="container mainSection">

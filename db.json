@@ -1,17 +1,17 @@
 {
   "recetas": [
     {
-      "nombreReceta": "pollo a la mnaranja",
-      "descripcion": "comida caliente que se realiza en la cocina",
-      "categoria": "comida fria",
+      "nombreReceta": "pollo a la mostaza",
+      "descripcion": "comida caliente que se realiza en la cocina casera",
       "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "comida caliente",
       "id": 3
     },
     {
-      "nombreReceta": "tarta de cebolla",
+      "nombreReceta": "tarta de cebollaaaaa",
       "descripcion": "tarta de cebolla casera",
       "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
-      "categoria": "comida caliente",
+      "categoria": "comida fria",
       "id": 4
     },
     {

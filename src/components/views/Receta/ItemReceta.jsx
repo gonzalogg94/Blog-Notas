@@ -10,7 +10,7 @@ const ItemReceta = ({receta}) => {
       <td>{receta.imagen}</td>
       <td>{receta.categoria}</td>
       <td>
-        <Link className="btn btn-warning">Editar</Link>
+        <Link className="btn btn-warning"  to='/administrar/editar'>Editar</Link>
         <Button variant="danger">
           Borrar
         </Button>

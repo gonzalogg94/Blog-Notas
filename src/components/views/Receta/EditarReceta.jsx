@@ -6,12 +6,14 @@ const EditarReceta = () => {
       <h1 className="display-4 mt-5 text-center text-white">Editar Receta</h1>
       <hr className="text-white" />
       <Form>
-        <Form.Group className="mb-3" controlId="formNombreProdcuto">
-          <Form.Text className="text-danger"></Form.Text>
-        </Form.Group>
         <Form.Group className="mb-3" controlId="formPrecio">
           <Form.Label>Titulo*</Form.Label>
-          <Form.Control type="number" placeholder="Ej: 50" />
+          <Form.Control type="text" placeholder="Titulo" />
+          <Form.Text className="text-danger"></Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formDescripcion">
+          <Form.Label>Descripcion*</Form.Label>
+          <Form.Control type="text" placeholder="Descripcion" />
           <Form.Text className="text-danger"></Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formImagen">
@@ -25,7 +27,7 @@ const EditarReceta = () => {
         <Form.Group className="mb-3" controlId="formPrecio">
           <Form.Label>Categoria*</Form.Label>
           <Form.Select>
-          <option value="">Seleccione una opcion</option>
+            <option value="">Seleccione una opcion</option>
             <option value="comida caliente">Comida Caliente</option>
             <option value="comida fria">Comida fria</option>
             <option value="dulce">Pastas</option>

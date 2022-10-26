@@ -12,3 +12,20 @@ export const consultarAPI = async () => {
     console.log(error);
   }
 };
+
+export const crearRecetaAPI = async (receta) => {
+  try {
+    const respuesta = await fetch(URL,{
+      method:"POST",
+      headers:{
+        "Content-type":"application/json"
+      },
+      body:JSON.stringify(receta)
+
+    });
+    const listaRecetas= await respuesta.json()
+    return listaRecetas
+  } catch (error) {
+    console.log(error);
+  }
+};

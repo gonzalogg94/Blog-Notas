@@ -1,20 +1,6 @@
 {
   "recetas": [
     {
-      "nombreReceta": "pollo",
-      "descripcion": "comida caliente que se realiza en la cocina",
-      "categoria": "comida fria",
-      "imagen": "https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "id": 1
-    },
-    {
-      "nombreReceta": "tarta",
-      "descripcion": "comida caliente que se realiza en la cocina",
-      "imagen": "https://images.pexels.com/photos/14040187/pexels-photo-14040187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "comida caliente",
-      "id": 2
-    },
-    {
       "nombreReceta": "pollo a la mnaranja",
       "descripcion": "comida caliente que se realiza en la cocina",
       "categoria": "comida fria",
@@ -29,11 +15,25 @@
       "id": 4
     },
     {
-      "nombreReceta": "pizza",
-      "descripcion": "pizza casera a la piedra",
+      "nombreReceta": "tarta de limon ",
+      "descripcion": "tarta casera dulce",
       "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
-      "categoria": "comida caliente",
+      "categoria": "postres",
       "id": 5
+    },
+    {
+      "nombreReceta": "tarta de manzana",
+      "descripcion": "tarta dulce de manzana",
+      "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
+      "categoria": "comida fria",
+      "id": 6
+    },
+    {
+      "nombreReceta": "tarta de uvas",
+      "descripcion": "producto con azucar de venta libre",
+      "imagen": "https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/01/hipertextual-arte-conceptual-avatar-2-muestra-nuevos-",
+      "categoria": "postres",
+      "id": 7
     }
   ]
 }

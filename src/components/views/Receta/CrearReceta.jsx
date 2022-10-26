@@ -105,8 +105,8 @@ reset();
             <option value="">Seleccione una opcion</option>
             <option value="comida caliente">Comida Caliente</option>
             <option value="comida fria">Comida fria</option>
-            <option value="dulce">Pastas</option>
-            <option value="salado">Postres</option>
+            <option value="pastas">Pastas</option>
+            <option value="postres">Postres</option>
           </Form.Select>
           <Form.Text className="text-danger">
             {errors.categoria?.message}

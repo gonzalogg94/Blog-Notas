@@ -7,6 +7,8 @@ import ItemReceta from "./Receta/ItemReceta";
 
 const Administrador = () => {
   const [recetas,setRecetas]=useState([])
+
+
   useEffect(()=>{
    consultarAPI().then((respuesta)=>{
 console.log(respuesta)
@@ -37,7 +39,7 @@ setRecetas(respuesta)
         </thead>
         <tbody>
           {
-            recetas.map((receta)=><ItemReceta key={receta.id}receta={receta}></ItemReceta>)
+            recetas.map((receta)=><ItemReceta key={receta.id}receta={receta} setRecetas={setRecetas}></ItemReceta>)
           }
         </tbody>
       </Table>

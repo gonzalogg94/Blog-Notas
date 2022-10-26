@@ -28,3 +28,13 @@ export const crearRecetaAPI = async (receta) => {
     console.log(error);
   }
 };
+export const borrarRecetaAPI = async (id) => {
+  try {
+    const respuesta = await fetch(`${URL}/${id}`,{
+      method:"DELETE",
+    });
+    return respuesta;
+  } catch (error) {
+    console.log(error);
+  }
+};

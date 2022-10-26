@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { crearRecetaAPI } from "../../helpers/queries";
 
 const CrearReceta = () => {
   const {
@@ -17,7 +18,14 @@ const CrearReceta = () => {
 
   const onSubmit = (datos) => {
     console.log(datos);
-    console.log("desde la funcion submit");
+    crearRecetaAPI(datos).then((respuesta)=>{
+if(respuesta.status===201){
+
+}else{
+  
+}
+    })
+    
   };
   return (
     <section className="container mainSection">

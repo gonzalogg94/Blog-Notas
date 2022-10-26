@@ -23,8 +23,7 @@ export const crearRecetaAPI = async (receta) => {
       body:JSON.stringify(receta)
 
     });
-    const listaRecetas= await respuesta.json()
-    return listaRecetas
+    return respuesta;
   } catch (error) {
     console.log(error);
   }
